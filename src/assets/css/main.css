@@ -81,7 +81,7 @@
 .single-user img {
   width: 11rem;
   border-radius: 50%;
-  height: 8rem;
+  height: 12rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
