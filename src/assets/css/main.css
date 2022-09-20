@@ -42,6 +42,18 @@
   color: var(--text-color-1);
 }
 
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 1.3rem 1rem;
+  }
+  .navbar h1 {
+    font-size: 2rem;
+  }
+  .navbar button {
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
 .user-wrapper {
   width: 90%;
   margin: auto;

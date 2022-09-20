@@ -43,3 +43,16 @@
   }
 
 }
+
+@media screen and (max-width:500px) {
+  .navbar{
+    padding: 1.3rem 1rem;
+    h1{
+      font-size:2rem;
+    }
+    button{
+      font-size: 1.8rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
