@@ -10,6 +10,15 @@
   flex-wrap: wrap;
 }
 
+.user-wrapper{
+  .empty-user{
+    width: 280px;
+    height: 211px;
+   border-radius: .4rem;
+
+    background-color: rgba(34, 33, 33, 0.123);
+  }
+}
 .single-user{
   width: 280px;
   height: 211px;
