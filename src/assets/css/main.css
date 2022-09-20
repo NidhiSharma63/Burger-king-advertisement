@@ -67,6 +67,7 @@
 
 .single-user {
   width: 280px;
+  height: 211px;
   padding: 2rem 0rem;
   background-color: hsla(0deg, 0%, 100%, 0.863);
   box-shadow: 0px 0px 10px 0px hsla(0deg, 1%, 25%, 0.568);
@@ -80,6 +81,7 @@
 .single-user img {
   width: 11rem;
   border-radius: 50%;
+  height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -126,6 +128,7 @@ html {
 body {
   overflow-x: hidden;
   background-color: hsla(0deg, 0%, 100%, 0.863);
+  margin-bottom: 2rem;
 }
 
 :root {
