@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Burger-king-advertisement/static/css/main.a0d9d7ba.css",
+    "main.js": "/Burger-king-advertisement/static/js/main.79c01257.js",
+    "index.html": "/Burger-king-advertisement/index.html",
+    "main.a0d9d7ba.css.map": "/Burger-king-advertisement/static/css/main.a0d9d7ba.css.map",
+    "main.79c01257.js.map": "/Burger-king-advertisement/static/js/main.79c01257.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0d9d7ba.css",
+    "static/js/main.79c01257.js"
+  ]
+}
