@@ -1,7 +1,6 @@
 import React from 'react'
 
 const SingleUser = ({userArray}) => {
-  console.log(userArray)
   return (
    <>
     {

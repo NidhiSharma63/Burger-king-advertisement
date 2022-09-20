@@ -96,6 +96,23 @@
   letter-spacing: 0.025rem;
 }
 
+.pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+  list-style: none;
+  font-size: 1.3rem;
+}
+.pagination ul li {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+
 * {
   margin: 0;
   padding: 0;

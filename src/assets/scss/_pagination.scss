@@ -1,0 +1,20 @@
+.pagination{
+
+  ul{
+    @include flex (
+      $alignItem:center,
+      $justifyContent:center,
+      $flexDirection:row,
+      $gap:3rem
+    );
+    list-style: none;
+    font-size: 1.3rem;
+    li{
+      cursor: pointer;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: .5rem 1rem;
+      border-radius: .4rem;
+    }
+  }
+}
