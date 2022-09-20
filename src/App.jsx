@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Navbar from './components/Navbar';
 import Users from './components/Users';
 import Pagination from './components/Pagination';
+import UserEmptyLayout from './components/UserEmptyLayout';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
   const [curentPage,setCurentPage] = useState(1);
   const [loading,setLoading] = useState(false);
   const [loadPage,setLoadPage] = useState(false)
+  console.log(userArray.length)
   
   return (
     <div className='main-wraper'>
@@ -20,10 +22,14 @@ const App = () => {
         curentPage={curentPage}
         setLoading={setLoading}
         loadPage={loadPage}/>
-      <Users 
-        userArray={userArray} 
-        loading={loading} 
-        setLoadPage={setLoadPage}/>
+        {
+          userArray.length===0?<UserEmptyLayout/>
+          :
+          <Users 
+          userArray={userArray} 
+          loading={loading} 
+          setLoadPage={setLoadPage}/>
+        }
       <Pagination 
         totalPage={totalPage} 
         setCurentPage={setCurentPage}
