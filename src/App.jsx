@@ -23,7 +23,7 @@ const App = () => {
         setLoading={setLoading}
         loadPage={loadPage}/>
         {
-          userArray.length===0?<UserEmptyLayout/>
+         !loading&& userArray.length===0?<UserEmptyLayout/>
           :
           <Users 
           userArray={userArray} 

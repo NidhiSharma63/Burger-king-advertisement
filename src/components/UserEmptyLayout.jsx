@@ -7,8 +7,8 @@ const UserEmptyLayout = () => {
   }
   return (
     <div className='user-wrapper'>
-      {userGridNumber.map((user)=>(
-        <div key={user.id} className='empty-user'>
+      {userGridNumber.map((i)=>(
+        <div key={i} className='empty-user'>
         </div>
       ))}
     </div>
