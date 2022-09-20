@@ -20,7 +20,10 @@ const App = () => {
         curentPage={curentPage}
         setLoading={setLoading}
         loadPage={loadPage}/>
-      <Users userArray={userArray} loading={loading}/>
+      <Users 
+        userArray={userArray} 
+        loading={loading} 
+        setLoadPage={setLoadPage}/>
       <Pagination 
         totalPage={totalPage} 
         setCurentPage={setCurentPage}

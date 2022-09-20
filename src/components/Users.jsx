@@ -2,7 +2,7 @@ import React from 'react';
 import SingleUser from './SingleUser';
 import { Audio } from 'react-loader-spinner'
 
-const Users = ({userArray,loading}) => {
+const Users = ({userArray,loading,setLoadPage}) => {
   if(loading) return <Audio
   height="80"
   width="80"
@@ -14,7 +14,7 @@ const Users = ({userArray,loading}) => {
 />
   return (
     <div className='user-wrapper' >
-      <SingleUser userArray={userArray}/>
+      <SingleUser userArray={userArray} setLoadPage={setLoadPage}/>
     </div>
   )
 }

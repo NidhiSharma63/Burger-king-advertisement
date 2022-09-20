@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const SingleUser = ({userArray}) => {
+const SingleUser = ({userArray,setLoadPage}) => {
+  useEffect(()=>{
+    setLoadPage(false)
+  },[])
   return (
    <>
     {
