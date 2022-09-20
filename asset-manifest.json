@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Burger-king-advertisement/static/css/main.9882abb7.css",
-    "main.js": "/Burger-king-advertisement/static/js/main.79c01257.js",
+    "main.css": "/Burger-king-advertisement/static/css/main.1c31a005.css",
+    "main.js": "/Burger-king-advertisement/static/js/main.a560907f.js",
     "index.html": "/Burger-king-advertisement/index.html",
-    "main.9882abb7.css.map": "/Burger-king-advertisement/static/css/main.9882abb7.css.map",
-    "main.79c01257.js.map": "/Burger-king-advertisement/static/js/main.79c01257.js.map"
+    "main.1c31a005.css.map": "/Burger-king-advertisement/static/css/main.1c31a005.css.map",
+    "main.a560907f.js.map": "/Burger-king-advertisement/static/js/main.a560907f.js.map"
   },
   "entrypoints": [
-    "static/css/main.9882abb7.css",
-    "static/js/main.79c01257.js"
+    "static/css/main.1c31a005.css",
+    "static/js/main.a560907f.js"
   ]
 }
