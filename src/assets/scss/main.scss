@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+@import 'mixin';
+@import 'navbar';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  overflow-x: hidden;
+  
+}
+:root{
+  --primary-color:hsl(240, 88%, 35%);
+  --secondary-color:white;
+  --ff-primary:'Lora', serif;
+  --text-color-1:white;
+}
+.main-wraper{
+  max-width: 1440px;
+  // border: 1px solid;
+  margin: auto;
+  @include flex (
+    $alignItem:center,
+    $justifyContent:space-between,
+    $flexDirection:column,
+    $gap:4rem
+  );
+}

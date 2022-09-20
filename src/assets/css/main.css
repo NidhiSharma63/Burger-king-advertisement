@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+.navbar-wrapper {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: auto;
+  padding: 1.8rem 2rem;
+  color: var(--text-color-1);
+  font-family: var(--ff-primary);
+}
+.navbar h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar button {
+  border: 0.1rem solid var(--text-color-1);
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+  transition: all 0.2s ease-in;
+}
+.navbar button:hover {
+  background-color: transparent;
+  color: var(--text-color-1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color:hsl(240, 88%, 35%);
+  --secondary-color:white;
+  --ff-primary:"Lora", serif;
+  --text-color-1:white;
+}
+
+.main-wraper {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 4rem;
+}

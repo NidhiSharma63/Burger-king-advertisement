@@ -1,0 +1,44 @@
+
+.navbar-wrapper{
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.navbar{
+  width: 95%;
+  margin: auto;
+  @include flex (
+    $alignItem:center,
+    $justifyContent:space-between,
+    $flexDirection:row,
+    $gap:auto,
+  );
+  padding:1.8rem 2rem;
+  color: var(--text-color-1);
+  font-family: var(--ff-primary);
+  h1{
+    font-size:3rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  button{
+    border: .1rem solid var(--text-color-1);
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding: 0.7rem 1.5rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+
+    transition: all .2s ease-in;
+
+    &:hover{
+      background-color: transparent;
+      color: var(--text-color-1);
+    }
+  }
+
+}
