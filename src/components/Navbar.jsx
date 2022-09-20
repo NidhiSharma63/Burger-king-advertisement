@@ -1,6 +1,16 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 
-const Navbar = () => {
+const Navbar = ({setUserArray}) => {
+  
+  useEffect(()=>{
+    const getUserData = async() =>{
+      const response =await fetch('https://reqres.in/api/users?page=1');
+      const data = await response.json();
+      setUserArray(data.data)
+    }
+    getUserData()
+  },[]);
+
   return (
     <div className='navbar-wrapper'>
       <nav className='navbar'>

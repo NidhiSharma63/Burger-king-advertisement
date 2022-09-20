@@ -3,6 +3,7 @@
 
 @import 'mixin';
 @import 'navbar';
+@import 'users';
 
 *{
   margin: 0;
@@ -14,10 +15,10 @@ html{
 }
 body{
   overflow-x: hidden;
-  
+  background-color: hsla(0, 0%, 100%, 0.863);
 }
 :root{
-  --primary-color:hsl(240, 88%, 35%);
+  --primary-color:hsl(240, 61%, 49%);
   --secondary-color:white;
   --ff-primary:'Lora', serif;
   --text-color-1:white;

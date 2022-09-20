@@ -1,10 +1,15 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Navbar from './components/Navbar';
+import Users from './components/Users';
 
 const App = () => {
+ 
+  const [userArray,setUserArray] = useState([])
+  
   return (
     <div className='main-wraper'>
-      <Navbar/>
+      <Navbar setUserArray={setUserArray}/>
+      <Users userArray={userArray}/>
     </div>
   )
 }

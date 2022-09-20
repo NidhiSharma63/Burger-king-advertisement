@@ -1,0 +1,45 @@
+.user-wrapper{
+  // border: 1px solid;
+  width: 90%;
+  margin: auto;
+  @include flex (
+    $alignItem:center,
+    $justifyContent:center,
+    $flexDirection:row,
+    $gap:3rem
+  );
+  flex-wrap: wrap;
+}
+
+.single-user{
+  width: 280px;
+  padding: 2rem 0rem;
+  background-color: hsla(0, 0%, 100%, 0.863);
+  box-shadow: 0px 0px 10px 0px hsla(0, 1%, 25%, 0.568);
+  border-radius: .4rem;
+  @include flex (
+    $alignItem:center,
+    $justifyContent:space-between,
+    $flexDirection:column,
+    $gap:2rem
+  );
+
+  img{
+    width: 11rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .user-info{
+    font-family: var(--ff-primary);
+    @include flex (
+    $alignItem:flex-start,
+    $justifyContent:space-between,
+    $flexDirection:column,
+    $gap:.3rem
+    );
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .025rem;
+  }
+}

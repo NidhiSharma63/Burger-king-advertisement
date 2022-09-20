@@ -41,6 +41,48 @@
   color: var(--text-color-1);
 }
 
+.user-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.single-user {
+  width: 280px;
+  padding: 2rem 0rem;
+  background-color: hsla(0deg, 0%, 100%, 0.863);
+  box-shadow: 0px 0px 10px 0px hsla(0deg, 1%, 25%, 0.568);
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+.single-user img {
+  width: 11rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.single-user .user-info {
+  font-family: var(--ff-primary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.025rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,10 +95,11 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: hsla(0deg, 0%, 100%, 0.863);
 }
 
 :root {
-  --primary-color:hsl(240, 88%, 35%);
+  --primary-color:hsl(240, 61%, 49%);
   --secondary-color:white;
   --ff-primary:"Lora", serif;
   --text-color-1:white;
