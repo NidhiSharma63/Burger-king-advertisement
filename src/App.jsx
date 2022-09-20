@@ -8,13 +8,23 @@ const App = () => {
  
   const [userArray,setUserArray] = useState([]);
   const [totalPage,setTotalPage] = useState(null);
-  const [curentPage,setCurentPage] = useState(1)
+  const [curentPage,setCurentPage] = useState(1);
+  const [loading,setLoading] = useState(false);
+  const [loadPage,setLoadPage] = useState(false)
   
   return (
     <div className='main-wraper'>
-      <Navbar setUserArray={setUserArray} setTotalPage={setTotalPage} curentPage={curentPage}/>
-      <Users userArray={userArray}/>
-      <Pagination totalPage={totalPage} setCurentPage={setCurentPage}/>
+      <Navbar 
+        setUserArray={setUserArray} 
+        setTotalPage={setTotalPage} 
+        curentPage={curentPage}
+        setLoading={setLoading}
+        loadPage={loadPage}/>
+      <Users userArray={userArray} loading={loading}/>
+      <Pagination 
+        totalPage={totalPage} 
+        setCurentPage={setCurentPage}
+        setLoadPage={setLoadPage}/>
     </div>
   )
 }

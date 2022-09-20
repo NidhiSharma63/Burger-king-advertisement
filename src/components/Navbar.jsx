@@ -1,23 +1,28 @@
 import React,{ useEffect } from 'react'
 
-const Navbar = ({setUserArray, setTotalPage,curentPage}) => {
+const Navbar = ({
+  setUserArray, 
+  setTotalPage,
+  curentPage,
+  setLoading,
+  loadPage
+}) => {
   
   useEffect(()=>{
     const getUserData = async() =>{
+      setLoading(true);
       const response = await fetch(`https://reqres.in/api/users?page=${curentPage}`);
-      try{
-        const data = await response.json();
-        setTotalPage(Number(data.total_pages));
-        setUserArray(data.data);
-      }
-      catch(error){
-        console.log(error);
-      }
+      setLoading(false)
+      const data = await response.json();
+      setTotalPage(Number(data.total_pages));
+      setUserArray(data.data);
     }
     const getUser = document.getElementById('get-user');
     getUser.addEventListener('click',getUserData);
-    getUserData();
-  },[curentPage]);
+    if(loadPage===true){
+      getUserData();
+    }
+  },[loadPage]);
 
   return (
     <div className='navbar-wrapper'>
